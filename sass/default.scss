@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&display=swap');
+html, body, a, div, p, strong, b, input, textarea, select, option, h1, h2, h3, h4, h5{
+    font-family: 'Poppins', sans-serif !important;
+}
+$xPosition: right;
+$yPosition: bottom;
+$colorP: #ffc400;
+$colorS: #111;
+
+html{
+    body{
+        background: #ccc !important;
+        display: flex;
+        justify-content: center;
+    }
+}
+.easy{
+    transition: all 0.5s;    
+}
+.box{
+    position: fixed;
+    border-radius: 8px;
+    background: $colorP;
+    max-width: 500px;
+    min-width: 350px;
+    #{$xPosition}: 1em;
+    #{$yPosition}: 1em;
+    box-shadow: 0 0 1em #999;
+    strong{
+        color: $colorS;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .closeButton{
+        border: none;
+        background: none;
+        color: $colorS;
+        font-size: 1.3em;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+    }
+    .accept{
+        right: 0.8em;
+        transition: all 0.5s;
+        background: white;
+        color: $colorS;
+        border: none;
+        font-size: 0.9em;
+        padding: 0.7em;
+        &:hover{
+            transition: all 0.5s;
+            background: #111;
+            color: #FFF;
+        }
+    }
+}
+
+.cookiebox-enter-active,
+.cookiebox-leave-active {
+  transition: opacity 1.5s ease;
+  transform: translateY(50%);
+}
+
+.cookiebox-enter-from,
+.cookiebox-leave-to {
+    transition: opacity 1.5s ease;
+    display: none;
+}
