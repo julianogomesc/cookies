@@ -1,7 +1,4 @@
-# credit-card-flip
-Modelo de animação simples no preenchimento de cartão de crédito com vuejs 2x, Bootstrap 4 e Gulp. <br>
-Uso de CDN no projeto afim de facilitar a implementação de quem quiser em outras plataformas. Não há integração com gateway de pagamentos, apenas front-end. 
-Uso do Gulp para minimificar e gerar o arquivo css do scss.
+# Cookies
 
 <h2>Pré-requisitos</h2>
 <ul>
